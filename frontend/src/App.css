@@ -1,0 +1,165 @@
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.overlay {
+  position: relative; 
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #000;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #000;
+  opacity: 1 !important;
+}
+.week-top{
+  background-color: rgb(233, 229, 197);
+}
+.week-orders {
+  padding: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 10px 220px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  color: #555;
+}
+
+.tab.active {
+  color: rgb(78, 97, 148);
+  border-bottom: 5px solid rgb(78, 97, 148);
+}
+
+.add-week-btn {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.add-week-btn-blue{
+  padding: 10px 20px;
+  background-color: rgba(18, 93, 255, 0.521);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-week-btn:hover {
+  background-color: #bbb;
+}
+
+
+.meal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.meal-card {
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.meal-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #000;
+  color: white;
+  padding: 5px 10px;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.follter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.follter1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
